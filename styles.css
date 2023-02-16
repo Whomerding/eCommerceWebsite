@@ -1,0 +1,47 @@
+html {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+    margin: 0;
+}
+h1 {
+    font-size: 2REM;
+}
+.nav-links ul {
+    list-style-type: none;
+    display: flex;
+    padding-left: 1REM;
+}
+.nav-links li {
+    padding: .5REM;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: grid;
+    grid-template-areas: "top top top";
+    justify-content: space-between;
+    align-items: baseline;
+}
+.main-img {
+    width: 100% 
+}
+
+.slogan-1 {
+    position: absolute;
+    top: 12REM; left: 1REM;
+    color: white;   
+}
+
+.slogan-2 {
+    position: absolute;
+    top: 33REM;
+    right: 1REM;
+
+    color: white;
+}
+
