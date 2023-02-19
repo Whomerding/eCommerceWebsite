@@ -46,10 +46,9 @@ header hr {
 }
 
 nav {
-    display: grid;
-    grid-template-areas: "top top top top";
-    justify-content: space-between;
+    display: flex;
     align-items: baseline;
+    justify-content: space-between;
 }
 
 #input_container { 

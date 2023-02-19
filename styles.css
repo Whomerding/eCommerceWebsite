@@ -45,10 +45,9 @@ header hr {
 }
 
 nav {
-    display: grid;
-    grid-template-areas: "top top top top";
-    justify-content: space-between;
+    display: flex;
     align-items: baseline;
+    justify-content: space-between;
 }
 
 #input_container { 
@@ -60,7 +59,18 @@ nav {
     margin:0;
     padding-right: 30px; 
 }
-
+@media screen and (max-width: 480px) {
+nav {
+    display:block;
+}
+.nav-links ul {
+    display: block;
+}
+.logo {
+    display: block;
+    align-items: left;
+}
+}
 /* main image and slogan*/
 
 .main-img {
@@ -79,6 +89,57 @@ nav {
     top: 46REM;
     right: 5REM;
     color: white;
+}
+@media screen and (max-width: 480px) {
+.slogan-1 {
+    position:absolute;
+    top: 31em;
+    right: 0em;
+}
+.slogan-1 h1 {
+    font-size: 15px !important;
+    margin: 0;
+    padding: 0;
+}
+.slogan-2 {
+    position:absolute;
+    top: 41em;
+    left: 18em;
+}
+.slogan-2 h1 {
+    font-size: 15px !important;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    font-size: 25px;
+}
+.about-us {
+    margin: 0 0;
+}
+.about-us-wrapper {
+    display: grid;
+    grid-template-areas:
+        'a a'
+        'e e'
+        'c c'
+        'b b'
+        'd d';
+    gap: 2px;
+    padding: 2px;
+    }
+}
+@media screen and (max-width: 1650px) {
+.slogan-1 {
+    position:absolute;
+    top: 9em;
+    right: 0em;
+}
+.slogan-2 {
+    position:absolute;
+    top: 30em;
+    left: 57em;
+}
 }
 
 .about-us {
@@ -126,6 +187,8 @@ nav {
   .c-txt-p {
      margin-block-start: 0;
   }
+
+
 /*products*/
 .products {
     margin: 5REM;
