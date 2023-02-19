@@ -8,10 +8,33 @@ body {
 h1 {
     font-size: 2REM;
 }
+button {
+    background-color: #BF7631;
+    margin-left: 10REM;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/*header*/
+
+header {
+    padding: 0 5%;
+}
+header hr {
+    align-items: center;
+    height: 0.2REM;
+    background: black;
+}
+
+/*nav bar*/
+
 .nav-links ul {
     list-style-type: none;
     display: flex;
     padding-left: 1REM;
+    
 }
 .nav-links li {
     padding: .5REM;
@@ -23,25 +46,152 @@ h1 {
 
 nav {
     display: grid;
-    grid-template-areas: "top top top";
+    grid-template-areas: "top top top top";
     justify-content: space-between;
     align-items: baseline;
 }
+
+#input_container { 
+    position:right; 
+    padding-left: 0; 
+    margin-left:0; 
+}
+#input { height:20px; 
+    margin:0;
+    padding-right: 30px; 
+}
+
+/* main image and slogan*/
+
 .main-img {
     width: 100% 
 }
 
 .slogan-1 {
     position: absolute;
-    top: 12REM; left: 1REM;
-    color: white;   
+    color: white;  
+    top: 12REM;
+    left: 5REM;
 }
 
 .slogan-2 {
     position: absolute;
-    top: 33REM;
-    right: 1REM;
-
+    top: 46REM;
+    right: 5REM;
     color: white;
 }
 
+.about-us {
+    margin: 0 10REM;
+}
+.about-us hr {
+    width: 60%;
+    margin-left: 0%;
+    height: .05REM;
+    background: black;
+}
+.vase-big {
+    width: 100%;
+}
+.vase-small {
+    width: 75%;
+}
+.a-text {
+    grid-area: a;
+}
+.b-pic {
+    grid-area: b;
+}
+.e-pic {
+    grid-area: e;
+}
+.c-txt {
+    grid-area: c;
+
+}
+.d-txt {
+    grid-area: d;
+}
+
+.about-us-wrapper {
+    display: grid;
+    grid-template-areas:
+      'a a e'
+      'b c e'
+      'b d e'
+      'b d e';
+    gap: 10px;
+    padding: 10px;
+  }
+  .c-txt-p {
+     margin-block-start: 0;
+  }
+/*products*/
+.products {
+    margin: 5REM;
+}
+.wrapper {
+    display: grid;
+    grid-template-areas: "t t t" "m m m" "b b b";
+    grid-row-gap: 10REM;
+    grid-column-gap: 10REM;
+    margin-top: 5REM;
+}
+.products hr {
+    width: 60%;
+    margin-left: 0%;
+    height: .05REM;
+    background: black;
+}
+.prod-img {
+        float: center;
+        width:  425px;
+        height: 425px;
+        object-fit: cover;
+    }
+.learn-more {
+    color:#BF7631;
+}
+.contact-us hr {
+    width: 60%;
+    margin-left: 0%;
+    height: .05REM;
+    background: black;
+    }
+
+    input {
+        width: 70%;
+      }
+   
+    form {
+        padding: 1REM 10%;
+    }
+    footer {
+        background-color: #BF7631;
+    }
+    .icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .logo {
+        padding: 1REM 13REM 0;
+    }
+
+    .sub-txt-1 {
+        grid-area: a;
+    }
+    .sub-txt-2 {
+        grid-area: b;
+    }
+    .copyright {
+        grid-area: c;
+    }
+    .footer-text {
+        display: grid;
+        grid-template-areas: "a . b c";
+        justify-items: end;
+        padding-left: 15REM;
+        padding-right: 2REM;
+    }
