@@ -1,0 +1,122 @@
+
+html {
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;  
+    margin: 0;
+}
+h1 {
+    font-size: 2REM;
+}
+button {
+    background-color: #BF7631;
+    margin-left: 10REM;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/*header*/
+
+header {
+    padding: 0 5%;
+}
+header hr {
+    align-items: center;
+    height: 0.2REM;
+    background: black;
+}
+
+/*nav bar*/
+
+.nav-links ul {
+    list-style-type: none;
+    display: flex;
+    padding-left: 1REM;
+    
+}
+.nav-links li {
+    padding: .5REM;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+nav {
+    display: grid;
+    grid-template-areas: "top top top top";
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+#input_container { 
+    position:right; 
+    padding-left: 0; 
+    margin-left:0; 
+}
+#input { height:20px; 
+    margin:0;
+    padding-right: 30px; 
+}
+
+/*individual product pages styling*/
+.product-image-pages {
+    grid-area: pic;
+    margin: 2REM;
+}
+.product-title-pages {
+    grid-area: title;
+}
+.description {
+    grid-area: describe;
+}
+.specifications {
+    grid-area: specs;
+}
+.add-to-cart {
+    grid-area: button;
+    font-size: 15px;
+    padding: 15px;
+}
+.product-body {
+    display: grid;
+    grid-template-areas: 
+    "pic pic title"
+    'pic pic describe'
+    'pic pic specs'
+    'pic pic button';
+}
+/*footer styling*/
+footer {
+    background-color: #BF7631;
+    margin: 10% 0;
+}
+.icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    padding: 1REM 13REM 0;
+}
+
+.sub-txt-1 {
+    grid-area: a;
+}
+.sub-txt-2 {
+    grid-area: b;
+}
+.copyright {
+    grid-area: c;
+}
+.footer-text {
+    display: grid;
+    grid-template-areas: "a . b c";
+    justify-items: end;
+    padding-left: 15REM;
+    padding-right: 2REM;
+}
